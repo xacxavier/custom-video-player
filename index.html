@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="css/progress.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/dad4b6879d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 class="title">Custom Video Player</h1>
+
+  <video src="videos/test.mp4" id="video" class="video"></video>
+
+  <div class="controls">
+
+    <button class="btn" id="play">
+      <i class="fa fa-play fa-2x"></i>
+    </button>
+
+    <button class="btn" id="stop">
+      <i class="fa fa-stop fa-2x"></i>
+    </button>
+
+    <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0" />
+
+    <span class="timestamp" id="timestamp">00:00</span>
+
+    <button class="btn" id="fullscreenBtn">
+      <i class="fa-solid fa-expand"></i>
+    </button>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs -->
